@@ -1,8 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { Grid, Menu, Button, Icon } from 'semantic-ui-react';
+import { Grid, Button, Icon } from 'semantic-ui-react';
 
-const LoginView = (props) => (
+const LoginView = props => (
   <Grid celled>
     <Grid.Row>
       <Grid.Column width={8}>

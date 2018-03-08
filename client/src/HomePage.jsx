@@ -1,7 +1,7 @@
 import React from 'react'
-import { Grid, Header, Button, Icon } from 'semantic-ui-react';
+import { Grid, Header, Button } from 'semantic-ui-react';
 
-const HomePage = (props) => (
+const HomePage = props => (
   <div>
     <Grid celled>
       <Grid.Row>
@@ -14,15 +14,15 @@ const HomePage = (props) => (
         </Grid.Column>
       </Grid.Row>
       <Grid.Row length={2}>
-      <Grid.Column width={8}>
-      <Button fluid name='find' secondary onClick={props.onMenuClick}>Find a Crawl</Button>
-      </Grid.Column>
-      <Grid.Column width={8}>
-      <Button fluid name='create' secondary onClick={props.onMenuClick}>Create a Crawl</Button>
-      </Grid.Column>
+        <Grid.Column width={8}>
+        <Button fluid name='find' secondary onClick={props.onMenuClick}>Find a Crawl</Button>
+        </Grid.Column>
+        <Grid.Column width={8}>
+        <Button fluid name='create' secondary onClick={props.onMenuClick}>Create a Crawl</Button>
+        </Grid.Column>
       </Grid.Row>
     </Grid>
   </div>
 )
 
-export default HomePage
+export default HomePage;

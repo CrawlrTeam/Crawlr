@@ -47,31 +47,31 @@ class BarMap extends React.Component {
         <p>${bar.formatted_address}</p>
         <p>Rating: ${bar.rating}</p>
         <p>Double click pin to add to crawl </p>
-        </div>`
+        </div>`;
         const info = new google.maps.InfoWindow({
           content: infostring
-        })
+        });
         const marker = new google.maps.Marker({
           position: {lat: bar.geometry.location.lat, lng: bar.geometry.location.lng},
           map: this.map,
-          title: bar.name,
+          title: bar.name
         });
         marker.addListener('click', function() {
-          if(barmap.state.info) {
+          if (barmap.state.info) {
             barmap.state.info.close();
           }
           barmap.setState({
             selected: bar,
             info: info
-          })
+          });
           info.open(map, marker);
         });
         marker.addListener('dblclick', function(){
-          if(barmap.props.baradded.length < 6) {
-            barmap.handleWindowClick()
+          if (barmap.props.baradded.length < 6) {
+            barmap.handleWindowClick();
           };
         });
-      })
+      });
     }
   }
 
@@ -79,12 +79,12 @@ class BarMap extends React.Component {
     const style = {
       width: '46vw',
       height: '46vh',
-    }
+    };
     return (
       <div ref="map" id="map" style={style}>
         loading map...
       </div>
-    )
+    );
   }
 }
 

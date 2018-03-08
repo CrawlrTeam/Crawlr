@@ -1,8 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { Grid, Menu } from 'semantic-ui-react';
+import { Grid } from 'semantic-ui-react';
 
-const SignupView = (props) => (
+const SignupView = props => (
   <Grid celled>
     <Grid.Row>
       <Grid.Column width={5}>

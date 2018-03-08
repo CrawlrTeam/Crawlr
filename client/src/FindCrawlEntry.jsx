@@ -35,7 +35,7 @@ class FindCrawlEntry extends React.Component {
         <p style={{verticalAlign: "bottom", textAlign: "right"}}>{this.props.crawl.description}</p>
         <br/>
       </div>
-    )
+    );
   }
 }
 

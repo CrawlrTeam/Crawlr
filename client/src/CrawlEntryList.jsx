@@ -1,13 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import CrawlEntry from './CrawlEntry.jsx';
 
-const CrawlEntryList = (props) => {
-return (
+const CrawlEntryList = props => (
     <div>
       <h2 className="ui header">
-      <i aria-hidden="true" className="beer icon"></i>
-      <div className="content">Your Crawl</div>
+        <i aria-hidden="true" className="beer icon"></i>
+        <div className="content">Your Crawl</div>
       </h2>
       <h4>Bar List</h4>
       <div className="ui items">
@@ -21,10 +19,7 @@ return (
         })}
       </div>
       {props.barAdded.length > 5 &&
-         <h5>
-        Max bars reached
-        </h5>
-      }
+      <h5>Max bars reached</h5>}
       {props.barAdded.length > 2 &&
       <button
         className="ui button"
@@ -36,7 +31,7 @@ return (
       </button>
       }
       {props.barAdded.length < 3 &&
-         <button
+      <button
         className="ui disabled button"
         disabled=""
         role="button"
@@ -47,7 +42,6 @@ return (
       }
       <h5>Click 'x' to remove</h5>
     </div>
-)
-};
+);
 
 export default CrawlEntryList;

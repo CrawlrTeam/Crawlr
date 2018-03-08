@@ -1,17 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-const CrawlCreateForm = (props) => {
-return (
+const CrawlCreateForm = props => (
     <div>
       <h2 className="ui header">
-      <i aria-hidden="true" className="beer icon"></i>
-      <div className="content">Your Crawl</div>
-      <button className="ui mini black button" onClick={props.cancelcrawl}>Back</button>
+        <i aria-hidden="true" className="beer icon"></i>
+        <div className="content">Your Crawl</div>
+        <button className="ui mini black button" onClick={props.cancelcrawl}>Back</button>
       </h2>
       <h4>Crawl Name</h4>
       <div className="ui input">
-      <input type="text" id="crawl-name" placeholder="Crawl name"></input>
+        <input type="text" id="crawl-name" placeholder="Crawl name"></input>
       </div>
       <h4>Bar List</h4>
       <div className="ui items">
@@ -24,17 +22,17 @@ return (
       </div>
       <h4>Crawl Description</h4>
       <div className="ui input">
-      <input type="text" id="crawl-description" placeholder="Write desciption here" />
+        <input type="text" id="crawl-description" placeholder="Write desciption here" />
       </div>
-      <button className="ui button"
-              role="button"
-              type="submit"
-              onClick={props.savecrawl}
+      <button
+        className="ui button"
+        role="button"
+        type="submit"
+        onClick={props.savecrawl}
       >
         Upload Your Crawl!
       </button>
     </div>
-)
-};
+);
 
 export default CrawlCreateForm;

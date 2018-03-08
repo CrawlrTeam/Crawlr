@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { Input } from 'semantic-ui-react';
 
 class Search extends React.Component {
@@ -19,7 +18,7 @@ class Search extends React.Component {
   }
 
   submitClick(e) {
-    this.props.handleSubmit(this.state.searchText)
+    this.props.handleSubmit(this.state.searchText);
     e.preventDefault();
   }
 
@@ -34,11 +33,15 @@ class Search extends React.Component {
             onChange={this.handleInputChange}
             placeholder="Enter city... "
           />
-          <Input type="submit" icon="search" value = "Search">
+          <Input
+            type="submit"
+            icon="search"
+            value="Search"
+          >
           </Input>
         </form>
       </div>
-    )
+    );
   }
 }
 

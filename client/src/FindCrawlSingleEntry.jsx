@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FindCrawlSingleEntry = (props) => (
+const FindCrawlSingleEntry = props => (
   <div>
     <button
       style={{padding: "15px 32px", textAlign: "center", textDecoration: "none", display: "inlineBlock", fontSize: "16px", margin: "4px 2px"}}
@@ -16,7 +16,6 @@ const FindCrawlSingleEntry = (props) => (
     {props.bars[4] && <p>{props.bars[4].name}</p>}
     {props.bars[5] && <p>{props.bars[5].name}</p>}
   </div>
-)
+);
 
 export default FindCrawlSingleEntry;
-    // <p><em>{props.description}</em></p>
